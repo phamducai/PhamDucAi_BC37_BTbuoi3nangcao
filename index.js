@@ -19,10 +19,10 @@ function tax(fullName, inComeYear, dependentPersons) {
   } else {
     taxPerson = taxIncome * 0.35;
   }
-  result = console.log(
+  console.log(
     `${fullName} có thuế thu nhập cá nhân phải trả ${taxPerson} triệu`
   );
-  return result;
+  return taxPerson;
 }
 tax(fullName, inComeYear, dependentPersons);
 // homework  TÍNH TIỀN CÁP
@@ -49,9 +49,10 @@ function charge(customerType, customerID, connectionNumber, channelNumber) {
     default:
       var cableCharge = "ban nhap sai loai khach hang";
   }
-  var result = console.log(
+  console.log(
     `Mã khách hàng ${customerID} , hóa đơn ${customerType} là ${cableCharge} $`
   );
-  return result;
+  return cableCharge;
 }
+
 charge(customerType, customerID, connectionNumber, channelNumber);
